@@ -1,10 +1,10 @@
 const txt = document.getElementById("txtBox")
 const showtxt = document.getElementById("showText");
 const buttonElem = document.querySelectorAll("button");
-
+const sound = document.getElementById("clicksound");
 for(let i = 0 ; i<buttonElem.length ; i++){
     buttonElem[i].addEventListener("click",() =>{
-
+        sound.play();
         buttonValue = buttonElem[i].textContent
         if(buttonValue == "C"){
             clearResult();
